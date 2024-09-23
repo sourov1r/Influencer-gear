@@ -38,13 +38,106 @@
 }
 
 
+/* Camera part styles */
+.camera-container{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 3rem 6.5rem;
+    gap: 5rem;
+}
+.camera-text{
+    padding: 0 2rem;
+}
+.camera-text h1{
+    color: #3A3A3A;
+    font-size: 3.2rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+}
+.camera-text p{
+    color: #3A3A3A;
+    font-weight: 600;
+}
+.btn-primary{
+    margin-top: 1rem;
+    font-size: 1rem;
+    border-radius: 2.5625rem;
+    background: #E02C6D;
+    padding: 1rem 2rem;
+    color: #fff;
+    font-weight: 700px;
+    border-style: none;
+    text-align: center;
+}
+.btn-primary i{
+    margin-left: 0.8rem;
+}
+
+.circle-img{
+    background-image: url(images/Circle\ design.svg);
+    width: 29.1rem;
+    height:29.1rem;
+}
 
 
 
+/* Online shopping store  */
+.online-store{
+    display: flex;
+    justify-content: space-evenly;
+    margin: 0 4rem;
+}
 
 
 @media screen and (max-width:576px) {
     .nav-bar{
         flex-direction: column;
+    }
+    .camera-container{
+        flex-direction: column-reverse;
+        gap: 2rem;
+        margin: 3rem 2.5rem;
+    }
+    .camera-img, .circle-img{
+        height: 100%;
+        width: 100%;
+    }
+    .camera-text {
+        padding: 0 1rem;
+        text-align: center;
+    }
+    .camera-text h1{
+        font-size: 1.5rem;
+    }
+    .online-store{
+        flex-wrap: wrap;
+        gap: 1rem;
+        margin: 0 2rem;
+    }
+    .online-store img{
+        width:3.6rem;
+        height: 1.06rem;
+    }
+}
+@media screen and (min-width:576px) and (max-width:960px) {
+    .nav-bar{
+        flex-direction: column;
+    }
+    .camera-container{
+        flex-direction: column-reverse;
+        gap: 2rem;
+        margin: 3rem 2.5rem;
+    }
+    .camera-img, .circle-img{
+        height: 100%;
+        width: 100%;
+    }
+    .camera-text {
+        padding: 0 1rem;
+        text-align: center;
+    }
+    .camera-text h1{
+        font-size: 1.5rem;
     }
 }
